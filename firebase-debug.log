@@ -1,0 +1,28 @@
+[debug] [2022-06-28T20:22:42.428Z] ----------------------------------------------------------------------
+[debug] [2022-06-28T20:22:42.430Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Basset\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-06-28T20:22:42.430Z] CLI Version:   11.1.0
+[debug] [2022-06-28T20:22:42.431Z] Platform:      win32
+[debug] [2022-06-28T20:22:42.431Z] Node Version:  v16.15.1
+[debug] [2022-06-28T20:22:42.432Z] Time:          Tue Jun 28 2022 21:22:42 GMT+0100 (Central European Standard Time)
+[debug] [2022-06-28T20:22:42.432Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-28T20:22:42.505Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-28T20:22:42.505Z] > authorizing via signed-in user (basset1620@gmail.com)
+[debug] [2022-06-28T20:22:42.505Z] [iam] checking project cnas-cbcff for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-28T20:22:42.508Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cnas-cbcff:testIamPermissions [none]
+[debug] [2022-06-28T20:22:42.509Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cnas-cbcff:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-28T20:23:03.551Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/cnas-cbcff:testIamPermissions
+[debug] [2022-06-28T20:23:03.552Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff [none]
+[debug] [2022-06-28T20:23:04.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff 200
+[debug] [2022-06-28T20:23:04.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff {"projectId":"cnas-cbcff","projectNumber":"60002041113","displayName":"cnas","name":"projects/cnas-cbcff","resources":{"hostingSite":"cnas-cbcff"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'cnas-cbcff'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-28T20:23:04.010Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff [none]
+[debug] [2022-06-28T20:23:25.061Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff
+[debug] [2022-06-28T20:23:25.062Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/cnas-cbcff
+    at RetryOperation._fn (C:\Users\Basset\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project cnas-cbcff. Please make sure the project exists and your account has permission to access it.
